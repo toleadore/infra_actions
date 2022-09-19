@@ -67,7 +67,7 @@ jobs:
     needs: build_and_push_to_docker_hub
     steps:
     - name: executing remote ssh commands to deploy
-      uses: appleboy/ssh-action@master\learn\backend-developer\courses\109da420-56a3-43b3-b0c7-579e6c325add\sprints\67341\topics\99237030-b323-401a-8d26-7045388863c0\lessons\367443c7-2897-4ad4-9fde-674b7f478299\
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
